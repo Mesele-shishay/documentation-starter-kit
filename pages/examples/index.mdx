@@ -1,0 +1,154 @@
+---
+title: Examples
+description: Code examples and use cases
+---
+
+# Code Examples
+
+This section provides practical examples of how to use the project's features and APIs.
+
+## Basic Usage
+
+### Authentication Example
+
+```php
+use App\Services\AuthService;
+
+$authService = new AuthService();
+
+// Login
+$credentials = [
+    'email' => 'user@example.com',
+    'password' => 'secure_password'
+];
+
+$token = $authService->login($credentials);
+
+// Use the token for authenticated requests
+$headers = [
+    'Authorization' => 'Bearer ' . $token
+];
+```
+
+### Data Management Example
+
+```php
+use App\Services\DataService;
+
+$dataService = new DataService();
+
+// Create new data
+$data = [
+    'title' => 'Example Title',
+    'content' => 'Example Content'
+];
+
+$result = $dataService->create($data);
+
+// Retrieve data
+$items = $dataService->list();
+
+// Update data
+$updateData = [
+    'title' => 'Updated Title'
+];
+$updated = $dataService->update($id, $updateData);
+
+// Delete data
+$deleted = $dataService->delete($id);
+```
+
+## Advanced Examples
+
+### Error Handling
+
+```php
+use App\Exceptions\CustomException;
+
+try {
+    $result = $service->riskyOperation();
+} catch (CustomException $e) {
+    // Handle specific exceptions
+    $errorMessage = $e->getMessage();
+    $errorCode = $e->getCode();
+} catch (\Exception $e) {
+    // Handle general exceptions
+    $errorMessage = 'An unexpected error occurred';
+}
+```
+
+### Using Events
+
+```php
+use App\Events\DataCreated;
+use App\Listeners\NotifyAdmin;
+
+// Dispatch an event
+event(new DataCreated($data));
+
+// Event listener
+class NotifyAdmin
+{
+    public function handle(DataCreated $event)
+    {
+        // Handle the event
+        $data = $event->getData();
+        // Send notification
+    }
+}
+```
+
+## Testing Examples
+
+### Unit Testing
+
+```php
+use PHPUnit\Framework\TestCase;
+use App\Services\DataService;
+
+class DataServiceTest extends TestCase
+{
+    private $service;
+
+    protected function setUp(): void
+    {
+        $this->service = new DataService();
+    }
+
+    public function testCreate()
+    {
+        $data = ['title' => 'Test'];
+        $result = $this->service->create($data);
+
+        $this->assertNotNull($result);
+        $this->assertEquals('Test', $result->title);
+    }
+}
+```
+
+## Integration Examples
+
+### API Integration
+
+```php
+use GuzzleHttp\Client;
+
+$client = new Client([
+    'base_uri' => 'https://api.example.com',
+    'timeout'  => 2.0,
+]);
+
+$response = $client->request('POST', '/api/data', [
+    'headers' => [
+        'Authorization' => 'Bearer ' . $token,
+        'Accept' => 'application/json',
+    ],
+    'json' => [
+        'title' => 'New Data'
+    ]
+]);
+
+$result = json_decode($response->getBody()->getContents(), true);
+```
+
+For more examples, check out the [examples directory](https://github.com/yourusername/yourrepository/tree/main/examples) in the repository.

@@ -1,15 +1,96 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "getting-started": {
+    "title": "Getting Started",
+    "type": "folder",
+    "items": {
+      "installation": "Installation",
+      "configuration": "Configuration",
+      "quick-start": "Quick Start Guide"
+    }
+  },
+  "core-concepts": {
+    "title": "Core Concepts",
+    "type": "folder",
+    "items": {
+      "index": "Overview",
+      "architecture": "Architecture",
+      "design-patterns": "Design Patterns",
+      "best-practices": "Best Practices"
+    }
+  },
+  "api-reference": {
+    "title": "API Reference",
+    "type": "folder",
+    "items": {
+      "index": "Overview",
+      "endpoints": "API Endpoints",
+      "authentication": "Authentication",
+      "error-handling": "Error Handling"
+    }
+  },
+  "advanced": {
+    "title": "Advanced Topics",
+    "type": "folder",
+    "items": {
+      "caching": "Caching Strategy",
+      "queues": "Queue Management",
+      "events": "Event System",
+      "security": "Security Best Practices"
+    }
+  },
+  "testing": {
+    "title": "Testing",
+    "type": "folder",
+    "items": {
+      "index": "Overview",
+      "unit-testing": "Unit Testing",
+      "integration-testing": "Integration Testing",
+      "feature-testing": "Feature Testing",
+      "ci-cd": "CI/CD Setup"
+    }
+  },
+  "deployment": {
+    "title": "Deployment",
+    "type": "folder",
+    "items": {
+      "production": "Production Setup",
+      "scaling": "Scaling Guide",
+      "monitoring": "Monitoring",
+      "maintenance": "Maintenance"
+    }
+  },
+  "examples": {
+    "title": "Examples",
+    "type": "folder",
+    "items": {
+      "index": "Overview",
+      "authentication": "Authentication Examples",
+      "crud": "CRUD Operations",
+      "api-usage": "API Usage"
+    }
+  },
+  "troubleshooting": {
+    "title": "Troubleshooting",
+    "type": "folder",
+    "items": {
+      "common-issues": "Common Issues",
+      "debugging": "Debugging Guide",
+      "faq": "FAQ"
+    }
+  },
+  "contributing": {
+    "title": "Contributing",
+    "type": "page"
+  },
   "about": {
     "title": "About",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
+  "support": {
+    "title": "Support ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://github.com/Mesele-shishay/PhpMpesaSDK/issues",
     "newWindow": true
   }
 }
