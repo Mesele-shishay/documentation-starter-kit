@@ -1,7 +1,18 @@
 {
+  "*": {
+    "theme": {
+      "breadcrumb": false
+    }
+  },
   "index": {
-    "title": "Introduction",
-    "display": "hidden"
+    "title": "Home",
+    "display": "hidden",
+    "theme": {
+      "breadcrumb": false,
+      "sidebar": false,
+      "toc": true,
+      "pagination": true
+    }
   },
   "-- Getting Started": {
     "type": "separator",
