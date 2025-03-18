@@ -1,4 +1,8 @@
 {
+  "index": {
+    "title": "Introduction",
+    "display": "hidden"
+  },
   "-- Getting Started": {
     "type": "separator",
     "title": "Getting Started"
