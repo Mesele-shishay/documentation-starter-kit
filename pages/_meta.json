@@ -17,10 +17,8 @@
     "type": "separator",
     "title": "Getting Started"
   },
-  "introduction": "Introduction",
   "installation": "Installation",
   "basic-usage": "Basic Usage",
-  "usage": "Usage Guide",
   "faq": "FAQ",
   "-- Core Concepts": {
     "type": "separator",
@@ -45,7 +43,6 @@
     "type": "separator",
     "title": "Advanced Topics"
   },
-  "callbacks": "Callbacks",
   "testing": "Testing",
   "core-classes": "Core Classes",
   "exceptions": "Exceptions",
