@@ -9,7 +9,6 @@
     "display": "normal",
     "theme": {
       "breadcrumb": false,
-      "sidebar": false,
       "toc": true,
       "pagination": true
     }
