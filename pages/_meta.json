@@ -5,8 +5,8 @@
     }
   },
   "index": {
-    "title": "Home",
-    "display": "hidden",
+    "title": "Overview",
+    "display": "normal",
     "theme": {
       "breadcrumb": false,
       "sidebar": false,
@@ -18,14 +18,16 @@
     "type": "separator",
     "title": "Getting Started"
   },
-  "introduction": "Overview",
+  "introduction": "Introduction",
   "installation": "Installation",
   "basic-usage": "Basic Usage",
+  "usage": "Usage Guide",
   "faq": "FAQ",
   "-- Core Concepts": {
     "type": "separator",
     "title": "Core Concepts"
   },
+  "traits": "Traits",
   "configuration": "Configuration",
   "authentication": "Authentication",
   "logging": "Logging",
@@ -34,6 +36,7 @@
     "type": "separator",
     "title": "API Reference"
   },
+  "api-reference": "API Overview",
   "stk-push": "STK Push",
   "b2c": "B2C Operations",
   "c2b": "C2B Operations",
