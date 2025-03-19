@@ -13,6 +13,10 @@ const config: DocsThemeConfig = {
   footer: {
     text: "Mpesa PHP SDK",
   },
+  code: {
+    copy: true,
+    highlight: true,
+  },
 };
 
 export default config;
