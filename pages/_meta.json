@@ -4,16 +4,23 @@
       "copy": true
     }
   },
+  "index": {
+    "title": "Overview",
+    "theme": {
+      "layout": "full",
+      "typesetting": "article"
+    },
+    "display": "hidden"
+  },
   "-- Getting Started": {
     "type": "separator",
     "title": "Getting Started"
   },
   "introduction": {
-    "title": "Overview",
+    "title": "Introduction",
     "theme": {
       "hidden": true
-    },
-    "index": true
+    }
   },
   "installation": "Installation",
   "basic-usage": "Basic Usage",
