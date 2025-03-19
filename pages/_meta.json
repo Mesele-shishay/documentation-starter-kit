@@ -8,7 +8,7 @@
     "type": "separator",
     "title": "Getting Started"
   },
-  "introduction": {
+  "index": {
     "title": "Overview",
     "theme": {
       "hidden": true
