@@ -3,6 +3,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  theme: {
+    code: {
+      copy: true, // Enable copy button globally
+    },
+  },
 };
 
 import { createRequire } from "module";
